@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1em;
+}
+
+h4 {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    height: 80vh;
+    width: 800px;
+    background-color: #f6fa04e7;
+}
+
+.arpos {
+    height: 50vh;
+    width: 700px;
+    display: flex;
+    margin: 0.3em;
+    padding: 0.2rem;
+    border: 0.3em;
+    left: 100p;
+    justify-content: space-evenly;
+    border-style: ridge;
+    border-color: black;
+    border-width: 10px;
+    background-color: rgb(86, 97, 247);
+    font-weight: 600;
+    font-size: xx-large;
+
+}
+
+
+.word {
+    display: flex;
+    padding: 0.3em;
+    margin: 0.4rem;
+    justify-content: space-around;
+    align-self: flex-start;
+    border: 0.3m;
+    border-style: double;
+    border-width: medium;
+    border-radius: 50%;
+    border-color: rgb(107, 11, 11);
+    background-color: blanchedalmond;
+    color: brown;
+    font-weight: 600;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+#word1 {
+    -webkit-animation: action 10s 1s alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(400px);
+    }
+}
+
+#word2 {
+    -webkit-animation: action 10s 2s alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(400px);
+    }
+}
+
+#word3 {
+    -webkit-animation: action 10s 4s alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(400px);
+    }
+}
+
+#word4 {
+    -webkit-animation: action 10s 0.5 alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(400px);
+    }
+}
+
+.word:hover {
+    background-color: #daf019;
+}
+
+.score {
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    padding: 1em;
+    font-size: 1.5em;
+    font-family: sans-serif;
+
+}
