@@ -22,7 +22,10 @@ h4 {
     align-self: center;
     height: 80vh;
     width: 800px;
-    background-color: #f6fa04e7;
+    background-image: url(./image/imagu.jpg);
+    background-repeat: no-repeat;
+    background-size: 55em 50em;
+
 }
 
 .arpos {
@@ -37,10 +40,11 @@ h4 {
     border-style: ridge;
     border-color: black;
     border-width: 10px;
-    background-color: rgb(86, 97, 247);
     font-weight: 600;
     font-size: xx-large;
-
+    background-image: url(./image/mini.jpg);
+    background-repeat: no-repeat;
+    background-size: 25em;
 }
 
 
@@ -60,11 +64,10 @@ h4 {
     font-weight: 600;
     font-size: xx-large;
     text-align: center;
-
 }
 
 #word1 {
-    -webkit-animation: action 10s 1s alternate;
+    -webkit-animation: action 10s 0.6 alternate;
 }
 
 @-webkit-keyframes action {
@@ -78,7 +81,7 @@ h4 {
 }
 
 #word2 {
-    -webkit-animation: action 10s 2s alternate;
+    -webkit-animation: action 10s 1s 0.6 alternate;
 }
 
 @-webkit-keyframes action {
@@ -92,7 +95,7 @@ h4 {
 }
 
 #word3 {
-    -webkit-animation: action 10s 4s alternate;
+    -webkit-animation: action 10s 2s 0.6 alternate;
 }
 
 @-webkit-keyframes action {
@@ -106,7 +109,7 @@ h4 {
 }
 
 #word4 {
-    -webkit-animation: action 10s 0.5 alternate;
+    -webkit-animation: action 10s 3s 0.6 alternate;
 }
 
 @-webkit-keyframes action {
@@ -125,10 +128,13 @@ h4 {
 
 .score {
     display: flex;
-    position: relative;
-    flex-flow: column;
+    flex-direction: row;
     padding: 1em;
     font-size: 1.5em;
     font-family: sans-serif;
 
+}
+
+input[type="text"] {
+    font-size: 50;
 }
