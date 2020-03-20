@@ -25,36 +25,55 @@ var wordfall = [
   "spine",
   "nervous"
 ];
+/// random words generation in array
+
 Array.prototype.random = function() {
   return this[Math.floor(Math.random() * this.length)];
 };
-wordfall.random();
+var m = wordfall.random();
+var j = wordfall.random();
+var k = wordfall.random();
+var l = wordfall.random();
+// changing words in div
+
+function autoRefreshDiv() {
+  document.getElementById("word1").innerHTML = m;
+  document.getElementById("word2").innerHTML = j;
+  document.getElementById("word3").innerHTML = k;
+  document.getElementById("word4").innerHTML = l;
+}
+setInterval(autoRefreshDiv, 1000);
+
+// geting element name from div
 
 var bake = document.getElementById("word1").innerHTML;
 console.log(bake);
 
-let button = document.getElementById("thewords");
-button.addEventListener("click", myFunction);
+//function for creating new element if the word matches
 
-function myFunction() {
-  let n = document.getElementById("myInput").value;
-  return n;
+function crElement() {
+  var element = document.getElementById("arpos").querySelectorAll("div");
+  var siv = document.getElementById("arpos").querySelector("div");
+  let siv1 = document.createElement("div");
+  siv1.textContent(wordfall.random());
+  element.replaceChild(siv, siv1);
 }
-console.log(myFunction);
 
-// document.querySelector('form.inp').addEventListener('submit', function (e) {
+let n;
+let b;
 
-//     //prevent the normal submission of the form
-//     e.preventDefault();
+var i = 0;
+function increment() {
+  i++;
+  document.getElementById("bron").innerHTML = i;
+}
+setInterval(increment, 300);
+//function for process after submit button is pressed
 
-//     console.log(nameInput.value);
-// });
-// var inputVal = document.getElementById("MyInput").addEventListener( "keydown", function( e ) {
-//     var keyCode = e.keyCode || e.which;
-//     if ( keyCode === 13 ) {
-//        // enter pressed
-//        get();
-//     }
-// }, false);
-
-// console.log(inputVal);
+document.getElementById("submit").onclick = function() {
+  n = document.getElementById("myInput").value;
+  b = document.getElementById("word1").value;
+  if (b == n) {
+    crElement();
+  }
+};

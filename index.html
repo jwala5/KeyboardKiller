@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Killer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" type="module"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Keyboard Killer</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="app.js" type="module"></script>
-</head>
-
-<body>
-  <div class="container">
-    <div class="arpos">
-      <div class="word" id="word1">ant</div>
-      <div class="word" id="word2">bend</div>
-      <div class="word" id="word3">skid</div>
-      <div class="word" id="word4">jet</div>
+  <body>
+    <audio
+      src="./songs/_Sooraj Dooba Hain_ FULL AUDIO Song _ Roy _ Arijit.mp3"
+    ></audio>
+    <div class="container">
+      <div class="arpos">
+        <div class="word" id="word1"></div>
+        <div class="word" id="word2"></div>
+        <div class="word" id="word3"></div>
+        <div class="word" id="word4"></div>
+      </div>
+      <div class="textbox">
+        <form name="form1" class="inp" id="formad" action="">
+          <input
+            type="text"
+            id="myInput"
+            placeholder="type falling words"
+            name="letter"
+            style="width:300px; height:55px; font-size:30px;"
+          />
+          <button id="submit" style="width:120px; height:55px; font-size:30px;">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="score">
+        <h2>Score:</h2>
+        <h2 id="bron">0</h2>
+      </div>
+      <h1>Keyboard Killer</h1>
     </div>
-    <div class="textbox">
-      <form name="form1" class="inp" id="formad" action="#">
-        <input font-size=type="text" id="myInput" placeholder="type falling words" name="letter"
-          style="width:300px; height:55px; font-size:30px;" />
-        <button id="thewords" style="width:120px; height:55px; font-size:30px;">Submit</button>
-      </form>
-    </div>
-    <div class="score">
-      <h2>Score:</h2>
-      <h2>20</h2>
-    </div>
-    <h1>Keyboard Killer</h1>
-  </div>
-</body>
-
+  </body>
 </html>

@@ -67,7 +67,7 @@ h4 {
 }
 
 #word1 {
-    -webkit-animation: action 10s 0.6 alternate;
+    -webkit-animation: action 16s 0.6 alternate;
 }
 
 @-webkit-keyframes action {
@@ -81,7 +81,7 @@ h4 {
 }
 
 #word2 {
-    -webkit-animation: action 10s 1s 0.6 alternate;
+    -webkit-animation: action 18s 1s 0.6 alternate;
 }
 
 @-webkit-keyframes action {
@@ -95,7 +95,7 @@ h4 {
 }
 
 #word3 {
-    -webkit-animation: action 10s 2s 0.6 alternate;
+    -webkit-animation: action 15s 2s 0.6 alternate;
 }
 
 @-webkit-keyframes action {
@@ -109,7 +109,7 @@ h4 {
 }
 
 #word4 {
-    -webkit-animation: action 10s 3s 0.6 alternate;
+    -webkit-animation: action 20s 3s 0.6 alternate;
 }
 
 @-webkit-keyframes action {
@@ -137,4 +137,5 @@ h4 {
 
 input[type="text"] {
     font-size: 50;
+    text-align: center;
 }
